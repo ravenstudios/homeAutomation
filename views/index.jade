@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  a(href='/')
+    h1 RPIO Test
+  
+    
+  button(id="test") Test
+  
+  
+
+  -for(var prop in devices)
+    //- p #{prop}: #{devices[prop].label} : #{devices[prop].pin}
+    button.controlButton(id=prop, data-pin=devices[prop].pin, data-status="0") #{devices[prop].label}

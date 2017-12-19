@@ -1,0 +1,53 @@
+{
+
+
+   "dev0" :
+   {
+     "label" : "Printer",
+     "pin" : "38"
+   },
+
+   "dev1" :
+   {
+     "label" : "Desk Lamp",
+     "pin" : "36"
+   },
+
+   "dev2" :
+   {
+     "label" : "Moniters",
+     "pin" : "40"
+   },
+
+   "dev3" :
+   {
+     "label" : "Speakers",
+     "pin" : "33"
+   },
+
+   "dev4" :
+   {
+     "label" : "3D Printer",
+     "pin" : "29"
+   },
+
+   "dev5" :
+   {
+     "label" : "Spare 1",
+     "pin" : "31"
+   },
+
+   "dev6" :
+   {
+     "label" : "Spare 2",
+     "pin" : "37"
+   },
+
+   "dev7" :
+   {
+     "label" : "Spare 3",
+     "pin" : "35"
+   }
+
+
+}
