@@ -13,6 +13,7 @@
     "jade": "^1.11.0",
     "jquery-toggles": "^4.0.0",
     "morgan": "~1.8.1",
+    "ping": "^0.2.2",
     "rc522": "^0.1.2",
     "rc522-rfid-promise": "^16.0.1",
     "request": "^2.83.0",

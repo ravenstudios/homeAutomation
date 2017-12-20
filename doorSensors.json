@@ -1,0 +1,25 @@
+{
+  "ds0" :
+  {
+    "label" : "Bath Room Door",
+    "ip" : "http://192.168.29.239:3001/readpin"
+  },
+
+  "ds1" :
+  {
+    "label" : "Test 1",
+    "ip" : ""
+  },
+
+  "ds2" :
+  {
+    "label" : "Test 2",
+    "ip" : "http://192.168.29.239:3001/readpin"
+  },
+
+  "ds3" :
+  {
+    "label" : "Test 3",
+    "ip" : ""
+  }
+}

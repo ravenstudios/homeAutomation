@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var on = require('./routes/on');
-var off = require('./routes/off');
+var togglePin = require('./routes/togglePin');
+var pingPhone = require('./routes/pingPhone')
 var api = require('./routes/api');
 var readGPIO = require('./routes/readGPIO');
 var app = express();
@@ -29,8 +29,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/on', on);
-app.use('/off', off);
+app.use('/togglePin', togglePin);
+app.use('/pingPhone', pingPhone);
 app.use('/api', api);
 app.use('/readGPIO', readGPIO);
 // catch 404 and forward to error handler

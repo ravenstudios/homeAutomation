@@ -1,14 +1,26 @@
 extends layout
 
 block content
-  a(href='/')
-    h1 RPIO Test
+  script.
+    var ds = !{JSON.stringify(doorSensors)};
+  .container
+    .row
+      .col.text-center
+        a(href='/')
+          h1 Raven Studios Home Automation
+    button(id="test") test
   
-    
-  button(id="test") Test
-  
-  
-
-  -for(var prop in devices)
-    //- p #{prop}: #{devices[prop].label} : #{devices[prop].pin}
-    button.controlButton(id=prop, data-pin=devices[prop].pin, data-status="0") #{devices[prop].label}
+    .row.buttons
+      -for(var prop in devices)
+        //- p #{prop}: #{devices[prop].label} : #{devices[prop].pin}
+        .col
+          div.text-center.button-box
+            button.controlButton(id=prop, data-pin=devices[prop].pin) #{devices[prop].label}
+    br      
+    .row
+      
+      -for(var ds in doorSensors)
+        //- p #{prop}: #{devices[prop].label} : #{devices[prop].pin}
+        .col
+          
+          div.text-center.button-box(id=ds, data-ip=doorSensors[ds].ip) #{doorSensors[ds].label}

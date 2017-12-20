@@ -4,7 +4,7 @@ var rpio = require("rpio");
 
 function GPIO(){
 
-  
+
 }
 
 
@@ -19,16 +19,21 @@ GPIO.prototype.off = function (pin) {
 };
 
 GPIO.prototype.readAll = function (arr) {
-  rpio.open(12, rpio.OUTPUT, rpio.LOW);
 
   var result = [];
+
   arr.forEach((i)=>{
     rpio.open(i, rpio.OUTPUT);
     result.push(rpio.read(i));
   });
 
-
   return result;
+};
+
+GPIO.prototype.readPin = function (pin) {
+
+  rpio.open(pin, rpio.OUTPUT);
+  return rpio.read(pin);
 };
 
 module.exports = GPIO;
